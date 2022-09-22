@@ -1,0 +1,8 @@
+.circular {
+    width: 8px;
+    height: 8px;
+    background: black;
+    display: inline-block;
+    margin: auto 5px;
+    border-radius: 100px;
+}
