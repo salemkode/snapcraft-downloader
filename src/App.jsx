@@ -40,7 +40,9 @@ function App() {
     setState(status.loading);
 
     // Get list of search from api
-    const response = await fetch("http://localhost:8000/snap/search/" + query);
+    const response = await fetch(
+      "https://api-snap.salemkode.com/snap/search/" + query
+    );
     const searchList = await response.json();
 
     // Check is status of request
@@ -62,7 +64,7 @@ function App() {
 
     // Get list of search from api
     const response = await fetch(
-      "http://localhost:8000/snap/download/" + title
+      "https://api-snap.salemkode.com/snap/download/" + title
     );
     const appInfo = await response.json();
 
