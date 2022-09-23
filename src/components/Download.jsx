@@ -3,7 +3,7 @@ export default function Download(props) {
     const linkList = Array.from(props.download[key]);
     return (
       <div className="col mt-4">
-        <h4 className="text-center mb-2">{key}</h4>
+        <h4 className="text-center mb-3">{key}</h4>
         <div className="list-group">
           {linkList.map((item) => (
             <div
@@ -25,7 +25,9 @@ export default function Download(props) {
   // Render
   return (
     <div className="container">
-      <div className="row row-cols-1 row-cols-md-2">{DownloadList}</div>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        {DownloadList}
+      </div>
     </div>
   );
 }
