@@ -122,7 +122,10 @@ function App() {
   //
   return (
     <div className="app">
-      <header className="d-flex justify-content-center align-items-center mt-5 py-3">
+      <header
+        onClick={() => setState(status.welcome)}
+        className="d-flex btn border-0 justify-content-center align-items-center mt-5 py-3"
+      >
         <h4>Snapcraft downloader</h4>
         <img
           src={snapcraft}
