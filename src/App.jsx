@@ -124,7 +124,7 @@ function App() {
     <div className="app">
       <header
         onClick={() => setState(status.welcome)}
-        className="d-flex btn border-0 justify-content-center align-items-center mt-5 py-3"
+        className="d-flex btn border-0 justify-content-center align-items-center mt-5 mb-2 py-3"
       >
         <h4>Snapcraft downloader</h4>
         <img
