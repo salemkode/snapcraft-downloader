@@ -13,6 +13,7 @@ import welcome from "./assets/welcome.svg";
 import { useState } from "react";
 import Download from "./components/Download";
 
+const api = "https://api-snap.salemkode.com";
 //
 function App() {
   // Define status of app
@@ -41,7 +42,7 @@ function App() {
 
     // Get list of search from api
     const response = await fetch(
-      "https://api-snap.salemkode.com/snap/search/" + query
+      api + "/snap/search/" + query
     );
     const searchList = await response.json();
 
@@ -64,7 +65,7 @@ function App() {
 
     // Get list of search from api
     const response = await fetch(
-      "https://api-snap.salemkode.com/snap/download/" + title
+      api + "/snap/download/" + title
     );
     const appInfo = await response.json();
 
