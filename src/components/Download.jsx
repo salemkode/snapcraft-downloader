@@ -6,16 +6,15 @@ export default function Download(props) {
         <h4 className="text-center mb-3">{key}</h4>
         <div className="list-group">
           {linkList.map((item) => (
-            <div
+            <a
               key={item.url}
-              type="button"
               className="list-group-item list-group-item-action d-flex justify-content-between"
               aria-current="true"
               href={item.url}
             >
               <span>{item.name}</span>
               <span>{item.size}</span>
-            </div>
+            </a>
           ))}
         </div>
       </div>
