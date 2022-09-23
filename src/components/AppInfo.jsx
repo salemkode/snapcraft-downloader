@@ -11,15 +11,7 @@ function AppInfo({ app }) {
         />
         <div>
           <h2>{app.details.title}</h2>
-          <h5>
-            <a
-              style={{ textTransform: "capitalize" }}
-              className="text-black"
-              href="https://snapcraft.io/search?category=development"
-            >
-              development
-            </a>
-          </h5>
+          <h5>{app.details.publisher}</h5>
         </div>
         <a
           className="ms-auto"
